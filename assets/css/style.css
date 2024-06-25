@@ -32,6 +32,9 @@
     01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700,800&display=swap");
+@import url('https://fonts.cdnfonts.com/css/panton-black-capsdisplay=swap');
+
+
 body {
   font-family: "Nunito", sans-serif;
   font-weight: normal;
@@ -548,10 +551,6 @@ p {
     top: -7px; }
 
 
-    .spaced{
-      padding-top: 10%;
-    }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse {
     position: absolute;
@@ -731,11 +730,14 @@ p {
 
 /*===== HEADER HERO =====*/
 .header-hero {
-  height: 800px;
+  height: auto;
+  padding-top: 7%;
   position: relative; }
   @media only screen and (min-width: 1400px) {
     .header-hero {
-      height: 990px; } }
+      height: 10vh;
+      padding-top: 300px; 
+      padding-bottom: 70px;} }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-hero {
       height: auto; } }
@@ -778,6 +780,25 @@ p {
   font-size: 60px;
   font-weight: 400;
   color: #000; }
+
+  .header-hero-content .hero-subtitle {
+    font-size: 22px;
+    font-weight: 400; 
+    padding-top: 20px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-hero-content .hero-subtitle {
+      font-size: 15px; } }
+  @media (max-width: 767px) {
+    .header-hero-content .hero-subtitle {
+      font-size: 16px; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .header-hero-content .hero-subtitle {
+      font-size: 18px; } }
+
+
+
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-hero-content .hero-title {
       font-size: 48px; } }
@@ -793,7 +814,7 @@ p {
     color: #4E0F53;
     display: contents; }
 .header-hero-content .text {
-  max-width: 490px;
+  max-width: 90%;
   font-size: 16px;
   padding-top: 40px; }
 .header-hero-content .header-singup {
@@ -1588,6 +1609,7 @@ p {
     .testimonial-content-wrapper {
       left: 0; } }
 
+
 .single-testimonial {
   background-color: #fff;
   padding: 40px 30px 50px;
@@ -1974,6 +1996,19 @@ p {
         color: #E1306C; }
       .blog-details-content .blog-share .social li a.color-4 {
         color: #0077B5; }
+
+
+
+.branded{
+  color: #4E0F53;
+  font-weight: 700;
+  font-family: 'Panton', sans-serif;
+  font-family: 'Panton Narrow', sans-serif;
+}
+
+.brand-color-2{
+  color:#DC9542
+}
 
 .single-comment-items {
   margin-top: 50px; }
