@@ -919,17 +919,17 @@ p {
     font-family: "Nunito", sans-serif;
     font-weight: 500; }
 .single-counter.counter-color-1 .counter-shape .shape-1, .single-counter.counter-color-1 .counter-shape .shape-2 {
-  background: -webkit-linear-gradient(left, #1cbe99 0%, #05de7d 100%);
-  background: -o-linear-gradient(left, #1cbe99 0%, #05de7d 100%);
-  background: linear-gradient(to right, #1cbe99 0%, #05de7d 100%); }
+  background: -webkit-linear-gradient(left, #27396A 0%, #6180d4 100%);
+  background: -o-linear-gradient(left, #27396A 0%, #6180d4 100%);
+  background: linear-gradient(to right, #27396A 0%, #6180d4 100%); }
 .single-counter.counter-color-2 .counter-shape .shape-1, .single-counter.counter-color-2 .counter-shape .shape-2 {
-  background: -webkit-linear-gradient(left, #3e2cea 0%, #4bb3f9 100%);
-  background: -o-linear-gradient(left, #3e2cea 0%, #4bb3f9 100%);
-  background: linear-gradient(to right, #3e2cea 0%, #4bb3f9 100%); }
+  background: -webkit-linear-gradient(left, #DC9542 0%, #DC9542 100%);
+  background: -o-linear-gradient(left, #DC9542 0%, #DC9542 100%);
+  background: linear-gradient(to right, #DC9542 0%, #DC9542 100%); }
 .single-counter.counter-color-3 .counter-shape .shape-1, .single-counter.counter-color-3 .counter-shape .shape-2 {
-  background: -webkit-linear-gradient(left, #4E0F53 0%, #ff9387 100%);
-  background: -o-linear-gradient(left, #4E0F53 0%, #ff9387 100%);
-  background: linear-gradient(to right, #4E0F53 0%, #ff9387 100%); }
+  background: -webkit-linear-gradient(left, #4E0F53 0%, #613465 100%);
+  background: -o-linear-gradient(left, #4E0F53 0%, #613465 100%);
+  background: linear-gradient(to right, #4E0F53 0%, #613465 100%); }
 .single-counter.counter-color-4 .counter-shape .shape-1, .single-counter.counter-color-4 .counter-shape .shape-2 {
   background-color: #f23559; }
 .single-counter.counter-color-5 .counter-shape .shape-1, .single-counter.counter-color-5 .counter-shape .shape-2 {
