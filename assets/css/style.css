@@ -944,13 +944,13 @@ p {
   background: -o-linear-gradient(left, #27396A 0%, #6180d4 100%);
   background: linear-gradient(to right, #27396A 0%, #6180d4 100%); }
 .single-counter.counter-color-2 .counter-shape .shape-1, .single-counter.counter-color-2 .counter-shape .shape-2 {
-  background: -webkit-linear-gradient(left, #DC9542 0%, #DC9542 100%);
-  background: -o-linear-gradient(left, #DC9542 0%, #DC9542 100%);
-  background: linear-gradient(to right, #DC9542 0%, #DC9542 100%); }
+  background: -webkit-linear-gradient(left, #4E0F53 0%, #632e67 100%);
+  background: -o-linear-gradient(left, #4E0F53 0%, #632e67 100%);
+  background: linear-gradient(to right, #4E0F53 0%, #632e67 100%); }
 .single-counter.counter-color-3 .counter-shape .shape-1, .single-counter.counter-color-3 .counter-shape .shape-2 {
-  background: -webkit-linear-gradient(left, #4E0F53 0%, #613465 100%);
-  background: -o-linear-gradient(left, #4E0F53 0%, #613465 100%);
-  background: linear-gradient(to right, #4E0F53 0%, #613465 100%); }
+  background: -webkit-linear-gradient(left, #DC9542 0%, #e6ab69 100%);
+  background: -o-linear-gradient(left, #DC9542 0%, #e6ab69 100%);
+  background: linear-gradient(to right, #DC9542 0%, #e6ab69 100%); }
 .single-counter.counter-color-4 .counter-shape .shape-1, .single-counter.counter-color-4 .counter-shape .shape-2 {
   background-color: #f23559; }
 .single-counter.counter-color-5 .counter-shape .shape-1, .single-counter.counter-color-5 .counter-shape .shape-2 {
