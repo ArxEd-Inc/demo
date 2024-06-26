@@ -1453,6 +1453,13 @@ p {
 .services-3 {
   border-top: 1px solid #dedede4f; }
 
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .single-service-3 .service-icon {
   display: inline-block;
   position: relative; }
