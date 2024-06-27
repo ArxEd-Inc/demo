@@ -390,7 +390,7 @@ plotly_plot <- ggplotly(p) %>%
     yaxis = list(title = "", fixedrange = T, automargin = T)
   ) %>% 
   add_annotations(
-    x=5,
+    x=6.4,
     y=49814,
     xref = "x",
     yref = "y",
@@ -400,7 +400,7 @@ plotly_plot <- ggplotly(p) %>%
     font = list(color = 'black', size = 13)
   ) %>%
   add_annotations(
-    x=5,
+    x=6.4,
     y=46068,
     xref = "x",
     yref = "y",
@@ -410,7 +410,7 @@ plotly_plot <- ggplotly(p) %>%
     font = list(color = 'black', size = 13)
   ) %>% 
   add_annotations(
-    x=5,
+    x=6.4,
     y=42752,
     xref = "x",
     yref = "y",
@@ -505,7 +505,7 @@ plotly_plot <- ggplotly(p) %>%
     yaxis = list(title = "", fixedrange = T, automargin = T)
   ) %>% 
   add_annotations(
-    x=5,
+    x=6.4,
     y=134432,
     xref = "x",
     yref = "y",
@@ -515,7 +515,7 @@ plotly_plot <- ggplotly(p) %>%
     font = list(color = 'black', size = 13)
   ) %>%
   add_annotations(
-    x=5,
+    x=6.4,
     y=118596,
     xref = "x",
     yref = "y",
@@ -525,7 +525,7 @@ plotly_plot <- ggplotly(p) %>%
     font = list(color = 'black', size = 13)
   ) %>% 
   add_annotations(
-    x=5,
+    x=6.4,
     y=110490,
     xref = "x",
     yref = "y",
