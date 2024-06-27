@@ -390,32 +390,32 @@ plotly_plot <- ggplotly(p) %>%
     yaxis = list(title = "", fixedrange = T, automargin = T)
   ) %>% 
   add_annotations(
-    x=5.4,
+    x=6,
     y=49814,
     xref = "x",
     yref = "y",
     text = "Highest Lane\nStep 1",
-    xanchor = 'left',
+    xanchor = 'right',
     showarrow = F,
     font = list(color = 'black', size = 13)
   ) %>%
   add_annotations(
-    x=5.4,
+    x=6,
     y=46068,
     xref = "x",
     yref = "y",
     text = "Masters\nStep 1",
-    xanchor = 'left',
+    xanchor = 'right',
     showarrow = F,
     font = list(color = 'black', size = 13)
   ) %>% 
   add_annotations(
-    x=5.4,
+    x=6,
     y=42752,
     xref = "x",
     yref = "y",
     text = "Bachelors\nStep 1",
-    xanchor = 'left',
+    xanchor = 'right',
     showarrow = F,
     font = list(color = 'black', size = 13)
   ) 
@@ -505,32 +505,32 @@ plotly_plot <- ggplotly(p) %>%
     yaxis = list(title = "", fixedrange = T, automargin = T)
   ) %>% 
   add_annotations(
-    x=5.4,
+    x=6,
     y=134432,
     xref = "x",
     yref = "y",
     text = "Highest Lane\nHighest Step",
-    xanchor = 'left',
+    xanchor = 'right',
     showarrow = F,
     font = list(color = 'black', size = 13)
   ) %>%
   add_annotations(
-    x=5.4,
+    x=6,
     y=118596,
     xref = "x",
     yref = "y",
     text = "Masters\nHighest Step1",
-    xanchor = 'left',
+    xanchor = 'right',
     showarrow = F,
     font = list(color = 'black', size = 13)
   ) %>% 
   add_annotations(
-    x=5.4,
-    y=111090,
+    x=6,
+    y=110490,
     xref = "x",
     yref = "y",
     text = "Bachelors\nHighest Step",
-    xanchor = 'left',
+    xanchor = 'right',
     showarrow = F,
     font = list(color = 'black', size = 13)
   ) 
