@@ -390,34 +390,34 @@ plotly_plot <- ggplotly(p) %>%
     yaxis = list(title = "", fixedrange = T, automargin = T)
   ) %>% 
   add_annotations(
-    x=6.4,
+    x=6,
     y=49814,
     xref = "x",
     yref = "y",
     text = "Highest Lane\nStep 1",
     xanchor = 'right',
     showarrow = F,
-    font = list(color = 'black', size = 13)
+    font = list(color = '#DC9542', size = 13)
   ) %>%
   add_annotations(
-    x=6.4,
+    x=6,
     y=46068,
     xref = "x",
     yref = "y",
     text = "Masters\nStep 1",
     xanchor = 'right',
     showarrow = F,
-    font = list(color = 'black', size = 13)
+    font = list(color = '#27396A', size = 13)
   ) %>% 
   add_annotations(
-    x=6.4,
+    x=6,
     y=42752,
     xref = "x",
     yref = "y",
     text = "Bachelors\nStep 1",
     xanchor = 'right',
     showarrow = F,
-    font = list(color = 'black', size = 13)
+    font = list(color = '#4E0F53', size = 13)
   ) 
 
 plotly_plot$x$data[[1]]$text <- paste(
@@ -505,53 +505,53 @@ plotly_plot <- ggplotly(p) %>%
     yaxis = list(title = "", fixedrange = T, automargin = T)
   ) %>% 
   add_annotations(
-    x=6.4,
+    x=6,
     y=134432,
     xref = "x",
     yref = "y",
     text = "Highest Lane\nHighest Step",
     xanchor = 'right',
     showarrow = F,
-    font = list(color = 'black', size = 13)
+    font = list(color = '#DC9542', size = 13)
   ) %>%
   add_annotations(
-    x=6.4,
+    x=6,
     y=118596,
     xref = "x",
     yref = "y",
     text = "Masters\nHighest Step1",
     xanchor = 'right',
     showarrow = F,
-    font = list(color = 'black', size = 13)
+    font = list(color = '#27396A', size = 13)
   ) %>% 
   add_annotations(
-    x=6.4,
+    x=6,
     y=110490,
     xref = "x",
     yref = "y",
     text = "Bachelors\nHighest Step",
     xanchor = 'right',
     showarrow = F,
-    font = list(color = 'black', size = 13)
+    font = list(color = '#4E0F53', size = 13)
   ) 
 
 
 plotly_plot$x$data[[1]]$text <- paste(
   # "Step:",salary_data$type, "<br>",
-  "Max Pay Bachelors:", scales::dollar(lowe_high_data$starting_b), "<br>",
-  'Increase:', scales::percent(round(lowe_high_data$increase_bmin, 3))
+  "Max Pay Bachelors:", scales::dollar(lowe_high_data$top_b), "<br>",
+  'Increase:', scales::percent(round(lowe_high_data$increase_bmax, 3))
 )
 
 plotly_plot$x$data[[2]]$text <- paste(
   # "Step:",salary_data$type, "<br>",
-  "Max Pay Masters:", scales::dollar(lowe_high_data$starting_m), "<br>",
-  'Increase:', scales::percent(round(lowe_high_data$increase_mmin, 3))
+  "Max Pay Masters:", scales::dollar(lowe_high_data$top_m), "<br>",
+  'Increase:', scales::percent(round(lowe_high_data$increase_mmax, 3))
 )
 
 plotly_plot$x$data[[3]]$text <- paste(
   # "Step:",salary_data$type, "<br>",
-  "Max Pay Highest Lane:", scales::dollar(lowe_high_data$starting_h), "<br>",
-  'Increase:', scales::percent(round(lowe_high_data$increase_hmin, 3))
+  "Max Pay Highest Lane:", scales::dollar(lowe_high_data$top_h), "<br>",
+  'Increase:', scales::percent(round(lowe_high_data$increase_hmax, 3))
 )
 
 plotly_plot$x$data[[4]]$hovertext <- paste(
