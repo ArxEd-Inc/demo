@@ -97,7 +97,7 @@ p <- ggplot(salary_data) +
   #          )+
   coord_cartesian(clip="off") +
   scale_y_continuous(labels = numberFormattR::suffix_formatter_0, 
-                     limits = c(32000,145000))+
+                     limits = c(32000,150000))+
   scale_x_discrete(labels = label_wrap(12),
                    guide = guide_axis(n.dodge = 2))+
   expand_limits(x= c(0, length(levels(as.factor(salary_data$label))) + 1))
@@ -111,11 +111,11 @@ plotly_plot <- ggplotly(p) %>%
                  fixedrange = T, 
                  automargin = T
                  ),
-    margin = list(l = 10, r = 10, b = 40, t = 10),
+    margin = list(l = 10, r = 10, b = 10, t = 30),
     yaxis = list(title = "", fixedrange = T, automargin = T)
     ) %>% add_annotations(
       x=7,
-      y=26500,
+      y=153500,
       xref = "x",
       yref = "y",
       text = "Click on the dots to learn more!",

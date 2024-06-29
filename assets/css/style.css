@@ -869,12 +869,17 @@ p {
         line-height: 46px;
         margin-top: 0; } }
 
+
+    .header-hero-content{
+      text-align: center;
+    }
+
 /*===========================
         03.ABOUT css 
 ===========================*/
 .about-title .welcome {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #4E0F53;
@@ -1460,10 +1465,36 @@ p {
   border-top: 1px solid #dedede4f; }
 
 
-.center-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+@media (max-width: 767px) {
+  .center-img {
+    height: 55vmin; } }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .center-img {
+    height: 55vmin;
+   } }
+@media (min-width: 767px) {
+    .center-img {
+      height: 40vmin;
+     } }
+
+
+@media (max-width: 767px) {
+.top-logo {
+  width: 45vmin; } }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .top-logo {
+    width: 30vmin;
+  } }
+@media (min-width: 767px) {
+  .top-logo {
+    width: 30vmin;
+    } }
+
+.our-services-image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .single-service-3 .service-icon {
@@ -1506,6 +1537,12 @@ p {
     margin-top: 30px; }
     .single-service-3 .service-content .more:hover {
       color: #4E0F53; }
+
+.content-center{
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+}
 
 /*===========================
        06.PRICING css 
