@@ -190,6 +190,11 @@ p {
 .slick-slide {
   outline: 0; }
 
+
+.spaced{
+  padding-top: 20px;
+}
+
 /*===== All Preloader Style =====*/
 .preloader {
   /* Body Overlay */
@@ -896,6 +901,17 @@ p {
       font-size: 24px; } }
   .about-title .title span {
     font-weight: 700; }
+
+.sub-welcome{
+  font-size: 16px;
+  color: #4E0F53;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+  .sub-welcome {
+    font-size: 14px; } }
 
 .single-counter .counter-shape {
   width: 55px; }
@@ -1831,6 +1847,47 @@ p {
   margin-left: 15px; }
 .form-message.error {
   color: #fc3832; }
+
+
+.lil-title{
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.table_component {
+  overflow: auto;
+  width: 100%;
+}
+
+.table_component table {
+  border: 2px solid #4E0F53;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: center;
+}
+
+.table_component caption {
+  caption-side: top;
+  text-align: center;
+}
+
+.table_component th {
+  border: 2px solid #4E0F53;
+  background-color: #4E0F53;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.table_component td {
+  border: 2px solid #4E0F53;
+  background-color: #ffffff;
+  color: #4E0F53;
+  padding: 5px;
+}
 
 .contact-form label {
   margin-bottom: 25px;
