@@ -158,10 +158,11 @@ p {
     border-color: #4E0F53; }
   .main-btn.main-btn-2 {
     background-color: #fff;
-    color: #4E0F53;
-    border-color: #4E0F53; }
+    border: 2px solid #4E0F53;
+    color: #4E0F53; }
     .main-btn.main-btn-2:hover {
       background-color: rgba(78, 15, 83, 0.3);
+      border: 2px solid #4E0F53;
       border-color: #4E0F53; }
 
 /*===== All Section Title Style =====*/
