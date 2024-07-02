@@ -1617,6 +1617,8 @@ p {
       color: #222; }
   .single-pricing.pricing-color-1 .pricing-title .btn {
     background-color: #27396A; }
+    .single-pricing.pricing-color-4 .pricing-title .btn {
+      background-color: gray; }
   .single-pricing.pricing-color-2 .pricing-title .btn {
     background-color: #4E0F53; }
   .single-pricing.pricing-color-3 .pricing-title .btn {
