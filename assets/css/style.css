@@ -904,7 +904,7 @@ p {
     font-weight: 700; }
 
 .sub-welcome{
-  font-size: 16px;
+  font-size: 18px;
   color: #4E0F53;
   font-family: "Nunito", sans-serif;
   letter-spacing: 2px;
@@ -912,7 +912,7 @@ p {
 
 @media (max-width: 767px) {
   .sub-welcome {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
 .single-counter .counter-shape {
   width: 55px; }
@@ -1751,14 +1751,38 @@ p {
         08.BRAND css 
 ===========================*/
 .brand-wrapper {
-  border-top: 1px solid #dedede4f; }
+  border-top: 1px solid #dedede4f; 
+  vertical-align: middle;
+  position:relative;
+  height: 150px;
+}
   .brand-wrapper .single-brand {
     float: left;
-    width: 20%;
+    position: absolute;
+    top: 50%;
+    margin-top: -3% ;
+    width: 13%;
     text-align: center; }
     @media (max-width: 767px) {
       .brand-wrapper .single-brand {
-        width: 50%; } }
+        width: 30%; } }
+
+
+  .second-brand{
+    position: absolute;
+    left: 14%;
+    top: 50%;
+    margin-top: -1% ;
+  }
+
+  @media (max-width: 767px) {
+    .second-brand {
+      left: 33%; 
+      font-size: 12px;
+      margin-top: 0% ;
+      top: 50%;
+
+    } }
 
 /*===========================
          09.BL0G css 
