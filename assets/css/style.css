@@ -1784,6 +1784,32 @@ p {
 
     } }
 
+  
+
+  .raw-data{
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .number-format{
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 37px;
+  }
+
+  @media (max-width: 767px) {
+    .raw-data {
+      font-size: 17px;
+
+    } }
+
+    @media (max-width: 767px) {
+      .number-format {
+        font-size: 30px;
+  
+      } }
+
 /*===========================
          09.BL0G css 
 ===========================*/

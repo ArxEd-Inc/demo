@@ -561,3 +561,25 @@ plotly_plot$x$data[[4]]$hovertext <- paste(
 htmlwidgets::saveWidget(config(plotly_plot, showLink = F, displayModeBar = FALSE),
                         "~/Documents/Github/demo/assets/plots/max.html")
 
+
+# Pies --------------------------------------------------------------------
+
+pie_data <- tibble(
+  type = c('yes', 'no'),
+  over_10 = c(22,69),
+  flat_amaount = c(12,79)
+)
+
+plotly::plot_ly(
+  pie_data,
+  labels = c('Administration', 'Pupil Services', 'Operations and Maintenance', 'Insurance, Retirement and others', 'Instructional Services'),
+  textposition = 'inside',
+  textinfo = 'label+percent',
+  insidetextfont = list(color = '#FFFFFF'),
+  insidetextorientation = 'auto',
+  values = ~over_10,
+  hoverinfo = 'label+text+percent',
+  sort = F,
+  text = ~ paste0("$", formatC(as.numeric(x), format="f", digits=2, big.mark=","))
+)
+
