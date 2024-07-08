@@ -192,9 +192,6 @@ p {
   outline: 0; }
 
 
-.spaced{
-  padding-top: 20px;
-}
 
 /*===== All Preloader Style =====*/
 .preloader {
@@ -778,29 +775,34 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-hero-content {
-    padding-top: 150px; } }
+    padding-top: 140px; } }
 @media (max-width: 767px) {
   .header-hero-content {
-    padding-top: 150px; } }
+    padding-top: 110px; } }
 .header-hero-content .hero-title {
   font-size: 60px;
   font-weight: 400;
   color: #000; }
 
-  .header-hero-content .hero-subtitle {
+ .hero-subtitle {
     font-size: 22px;
     font-weight: 400; 
     padding-top: 20px;
   }
 
+  .about-title .hero-subtitle {
+    text-align: left;
+  }
+
+
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .header-hero-content .hero-subtitle {
+    .hero-subtitle {
       font-size: 15px; } }
   @media (max-width: 767px) {
-    .header-hero-content .hero-subtitle {
+    .hero-subtitle {
       font-size: 16px; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .header-hero-content .hero-subtitle {
+     .hero-subtitle {
       font-size: 18px; } }
 
 
@@ -883,6 +885,15 @@ p {
 /*===========================
         03.ABOUT css 
 ===========================*/
+.about-area{
+  padding-top: 115px;
+}
+
+@media (max-width: 767px) {
+  .about-area {
+    padding-top: 55px; } }
+
+
 .about-title .welcome {
   font-size: 18px;
   font-weight: 600;
@@ -894,7 +905,6 @@ p {
     .about-title .welcome {
       font-size: 16px; } }
 .about-title .title {
-  padding-top: 10px;
   font-weight: 400;
   font-size: 32px; }
   @media (max-width: 767px) {
@@ -905,6 +915,7 @@ p {
 
 .sub-welcome{
   font-size: 18px;
+  padding-top: 20px;
   color: #4E0F53;
   font-family: "Nunito", sans-serif;
   letter-spacing: 2px;
@@ -912,7 +923,8 @@ p {
 
 @media (max-width: 767px) {
   .sub-welcome {
-    font-size: 16px; } }
+    font-size: 16px;
+    padding-top: 13px; } }
 
 .single-counter .counter-shape {
   width: 55px; }
@@ -1751,7 +1763,6 @@ p {
         08.BRAND css 
 ===========================*/
 .brand-wrapper {
-  border-top: 1px solid #dedede4f; 
   vertical-align: middle;
   position:relative;
   height: 150px;
@@ -1761,7 +1772,7 @@ p {
     position: absolute;
     top: 50%;
     margin-top: -3% ;
-    width: 13%;
+    width: 33%;
     text-align: center; }
     @media (max-width: 767px) {
       .brand-wrapper .single-brand {
@@ -1770,7 +1781,7 @@ p {
 
   .second-brand{
     position: absolute;
-    left: 14%;
+    left: 36%;
     top: 50%;
     margin-top: -1% ;
   }
@@ -1778,7 +1789,7 @@ p {
   @media (max-width: 767px) {
     .second-brand {
       left: 33%; 
-      font-size: 12px;
+      font-size: 15px;
       margin-top: 0% ;
       top: 50%;
 
@@ -1791,6 +1802,17 @@ p {
     font-weight: 500;
     color: black;
   }
+
+  .big-spaced{
+    padding-bottom: 90px;
+    padding-top: 90px;
+  }
+
+  @media (max-width: 767px) {
+    .big-spaced {
+      padding-bottom: 70px;
+      padding-top: 70px;
+    } }
 
   .number-format{
     font-weight: 700;
