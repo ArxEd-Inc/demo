@@ -565,21 +565,106 @@ htmlwidgets::saveWidget(config(plotly_plot, showLink = F, displayModeBar = FALSE
 # Pies --------------------------------------------------------------------
 
 pie_data <- tibble(
-  type = c('yes', 'no'),
+  type = c('no', 'yes'),
+  # over_10 = c(69,22),
   over_10 = c(22,69),
-  flat_amaount = c(12,79)
+  flat_amount = c(12,79)
+  # flat_amaount = c(79,12)
 )
 
-plotly::plot_ly(
+plotly_plot <- plotly::plot_ly(
   pie_data,
-  labels = c('Administration', 'Pupil Services', 'Operations and Maintenance', 'Insurance, Retirement and others', 'Instructional Services'),
-  textposition = 'inside',
-  textinfo = 'label+percent',
+  labels = c(''),
+  textposition = 'outside',
   insidetextfont = list(color = '#FFFFFF'),
   insidetextorientation = 'auto',
   values = ~over_10,
-  hoverinfo = 'label+text+percent',
+  hoverinfo = 'text+percent',
   sort = F,
-  text = ~ paste0("$", formatC(as.numeric(x), format="f", digits=2, big.mark=","))
-)
+  text = ~over_10 ,
+  marker = list(colors =  c('#e86320', 'lightgray'),
+                line = list(color = '#FFFFFF', width = 1))
+  ) %>% 
+  plotly::add_pie(hole = 0.6)%>%
+  plotly:: config(displayModeBar = FALSE) %>% 
+  plotly::layout(
+    # title = "F24-FY27 COLA Settlements ≥ 10%",
+    annotations = list(
+      x = 0.5,
+      y = 0.5,
+      text = "F24-FY27 COLA\n Settlements ≥ 10%",
+      xref = "x",
+      yref = "y",
+      showarrow = F,
+      font = list(color = 'black', size = 15)
+    ),
+    showlegend = F,
+    xaxis = list(
+      showgrid = FALSE,
+      zeroline = FALSE,
+      showticklabels = FALSE,
+      fixedrange = T
+    ),
+    margin = list(l = 30,r = 30,b = 30,t = 30),
+    yaxis = list(
+      showgrid = FALSE,
+      zeroline = FALSE,
+      showticklabels = FALSE,
+      fixedrange = T
+    ),
+    font = list(size = 18,  family = "Arial Rounded MT Bold")
+  )
+
+
+
+htmlwidgets::saveWidget(config(plotly_plot, showLink = F, displayModeBar = FALSE),
+                        "~/Documents/Github/demo/assets/plots/over10.html")
+
+
+plotly_plot <- plotly::plot_ly(
+  pie_data,
+  labels = c(''),
+  textposition = 'outside',
+  insidetextfont = list(color = '#FFFFFF'),
+  insidetextorientation = 'auto',
+  values = ~flat_amount,
+  hoverinfo = 'text+percent',
+  sort = F,
+  text = ~flat_amount ,
+  marker = list(colors =  c('#e86320', 'lightgray'),
+                line = list(color = '#FFFFFF', width = 1))
+) %>% 
+  plotly::add_pie(hole = 0.6)%>%
+  plotly:: config(displayModeBar = FALSE) %>% 
+  plotly::layout(
+    # title = "F24-FY27 Districts Offering Fixed $ Increases",
+    annotations = list(
+      x = 0.5,
+      y = 0.5,
+      text = "F24-FY27 Districts\n Offering Fixed $ Increases",
+      xref = "x",
+      yref = "y",
+      showarrow = F,
+      font = list(color = 'black', size = 15)
+    ),
+    showlegend = F,
+    xaxis = list(
+      showgrid = FALSE,
+      zeroline = FALSE,
+      showticklabels = FALSE,
+      fixedrange = T
+    ),
+    margin = list(l = 30, r = 30, b = 30, t = 30),
+    yaxis = list(
+      showgrid = FALSE,
+      zeroline = FALSE,
+      showticklabels = FALSE,
+      fixedrange = T
+    ),
+    font = list(size = 18,  family = "Arial Rounded MT Bold")
+  )
+
+
+htmlwidgets::saveWidget(config(plotly_plot, showLink = F, displayModeBar = FALSE),
+                        "~/Documents/Github/demo/assets/plots/flats.html")
 
