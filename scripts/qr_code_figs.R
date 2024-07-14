@@ -596,7 +596,7 @@ plotly_plot <- plotly::plot_ly(
       xref = "x",
       yref = "y",
       showarrow = F,
-      font = list(color = 'black', size = 15)
+      font = list(color = 'black', size = 13.5)
     ),
     showlegend = F,
     xaxis = list(
@@ -645,7 +645,7 @@ plotly_plot <- plotly::plot_ly(
       xref = "x",
       yref = "y",
       showarrow = F,
-      font = list(color = 'black', size = 15)
+      font = list(color = 'black', size = 13.5)
     ),
     showlegend = F,
     xaxis = list(
