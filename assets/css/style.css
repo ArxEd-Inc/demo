@@ -1013,6 +1013,13 @@ p {
 /*===========================
        04.GALLERY css 
 ===========================*/
+
+.gallery-video iframe{
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
 .single-gallery {
   position: relative; }
   .single-gallery .gallery-image img {
