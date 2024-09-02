@@ -735,7 +735,7 @@ p {
 .header-hero {
   height: auto;
   position: relative; }
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 991px) {
     .header-hero {
       height: 10vh;
       padding-top: 7%;
@@ -747,6 +747,7 @@ p {
   @media (max-width: 767px) {
     .header-hero {
       height: auto; } }
+      
 
 .header-hero-image {
   position: absolute;

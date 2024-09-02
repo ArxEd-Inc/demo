@@ -1,0 +1,19 @@
+button {
+    color: #DC9542 !important;
+}
+
+button:hover {
+    color: #f3ab58 !important;
+}
+
+ul.nav li.active a {
+    color: #DC9542 !important;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+.spec-font{
+    font-family: "Nunito", sans-serif;
+}
